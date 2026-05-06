@@ -110,19 +110,28 @@ export function Context() {
 
         {/* Flow indicator */}
         <FadeIn delay={0.3}>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-stone-500">
+          <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 text-sm">
             <span className="px-4 py-2 rounded-full bg-pista-50 border border-pista-200 text-pista-700 font-medium">
               Gero diseña
             </span>
-            <span className="text-stone-300 font-light">·</span>
+
+            <span className="md:hidden text-stone-300 text-xs" aria-hidden="true">↓</span>
+            <span className="hidden md:block text-stone-300 font-light">·</span>
+
             <span className="px-4 py-2 rounded-full bg-choco-50 border border-choco-200 text-choco-700 font-medium">
               Ema acompaña
             </span>
-            <span className="text-stone-300 font-light">·</span>
+
+            <span className="md:hidden text-stone-300 text-xs" aria-hidden="true">↓</span>
+            <span className="hidden md:block text-stone-300 font-light">·</span>
+
             <span className="px-4 py-2 rounded-full bg-stone-50 border border-stone-200 text-stone-700 font-medium">
               Nico decide
             </span>
+
+            <span className="md:hidden text-stone-300 text-xs" aria-hidden="true">↓</span>
             <span className="hidden md:inline text-stone-300 font-light">→</span>
+
             <span className="px-4 py-2 rounded-full bg-stone-900 text-white font-medium">
               Marca que funciona
             </span>
