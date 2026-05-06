@@ -15,9 +15,9 @@ export function MyRole() {
             Conectar la idea del negocio con la marca que se va a diseñar
           </h2>
           <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mb-14">
-            Mi trabajo no es diseñar. Es asegurarme de que cuando Gero diseñe,
-            lo haga con una dirección clara, y de que cuando Nico tenga que
-            decidir, pueda hacerlo con criterio.
+            Mi trabajo no es diseñar. Es ayudar a que cuando Gero diseñe, lo
+            haga con una dirección clara, y que cuando Nico tenga que decidir,
+            pueda hacerlo con criterio.
           </p>
         </FadeIn>
 

@@ -13,9 +13,10 @@ export function Problems() {
             Problemas concretos que este proceso ayuda a resolver
           </h2>
           <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mb-14">
-            Construir una marca sin un orden claro trae costos reales: tiempo
-            perdido, decisiones que hay que revisar y un resultado que no
-            termina de funcionar. Esto es lo que me propongo ayudar a evitar.
+            Construir una marca sin una dirección clara puede traer costos
+            reales: tiempo perdido, decisiones que hay que revisar y un
+            resultado que no termina de funcionar. Esto es lo que me propongo
+            ayudar a evitar.
           </p>
         </FadeIn>
 

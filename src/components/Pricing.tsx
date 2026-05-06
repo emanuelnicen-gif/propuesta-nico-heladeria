@@ -11,11 +11,12 @@ export function Pricing() {
           <div className="text-center mb-14">
             <SectionLabel className="text-center">Inversión</SectionLabel>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-900 mb-4 tracking-tight text-balance">
-              Un precio pensado para este proyecto
+              Valor de la propuesta
             </h2>
             <p className="text-stone-500 text-lg leading-relaxed max-w-xl mx-auto">
-              Sin inflarlo para después negociar ni bajarlo para parecer
-              accesible. Es lo que vale el trabajo que propongo hacer.
+              Un valor claro y acotado para una primera etapa concreta: ordenar
+              la base estratégica de la marca y acompañar las decisiones
+              iniciales del proceso.
             </p>
           </div>
         </FadeIn>
@@ -80,14 +81,14 @@ export function Pricing() {
                     href="#cierre"
                     className="mt-8 w-full flex items-center justify-center gap-2 py-4 rounded-2xl bg-stone-900 text-white font-medium text-sm hover:bg-stone-800 active:scale-[0.98] transition-all duration-200"
                   >
-                    Avancemos con el diagnóstico
+                    Coordinemos la primera reunión
                     <ArrowRight className="w-4 h-4" />
                   </a>
 
                   <p className="text-xs text-stone-400 text-center mt-5 leading-relaxed">
-                    Es un valor pensado especialmente para este proyecto,
-                    contemplando la relación personal y el hecho de que la
-                    identidad visual la trabaja Gero.
+                    Es un valor pensado especialmente para esta primera etapa del
+                    proyecto, contemplando la relación personal y que el
+                    desarrollo visual de la identidad lo va a trabajar Gero.
                   </p>
                 </div>
               </div>

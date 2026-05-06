@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-cream border-t border-stone-200/60 py-8">
       <div className="container-base flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-stone-400">
         <p>
-          © 2025{" "}
+          © 2026{" "}
           <span className="font-medium text-stone-600">Emanuel Nicenboim</span>
         </p>
         <p className="text-center text-xs">

@@ -29,14 +29,13 @@ export function Closing() {
                 </span>
 
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-5 tracking-tight text-balance leading-[1.15]">
-                  Si te sirve, avancemos con una primera reunión y ordenamos el
-                  punto de partida
+                  El próximo paso sería arrancar con una reunión de diagnóstico
                 </h2>
 
                 <p className="text-stone-400 text-base leading-relaxed max-w-lg mx-auto mb-10">
-                  La idea es que tengas una base clara para tomar decisiones y
-                  que Gero pueda diseñar con un brief bien definido, evitando
-                  idas y vueltas innecesarias.
+                  En esa primera instancia ordenamos la idea del negocio, las
+                  referencias, el estilo buscado y los criterios que después van
+                  a orientar el trabajo con Gero.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -46,7 +45,7 @@ export function Closing() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Avancemos con el diagnóstico
+                    Coordinemos la primera reunión
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <a

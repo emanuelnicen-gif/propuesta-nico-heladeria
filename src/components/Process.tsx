@@ -19,66 +19,36 @@ export function Process() {
           </p>
         </FadeIn>
 
-        {/* Desktop: horizontal timeline */}
-        <div className="hidden lg:block">
-          {/* Line */}
-          <div className="relative mb-12">
-            <div className="absolute top-[22px] left-[calc(12.5%)] right-[calc(12.5%)] h-px bg-gradient-to-r from-choco-200 via-pista-200 to-stone-200" />
+        {/* Single DOM render — layout cambia con CSS según breakpoint */}
+        <div className="relative flex flex-col lg:grid lg:grid-cols-4 lg:gap-6">
+          {/* Línea horizontal desktop */}
+          <div className="hidden lg:block absolute top-5 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-choco-200 via-pista-200 to-stone-200" />
 
-            <div className="grid grid-cols-4 gap-6">
-              {processSteps.map((step, i) => (
-                <FadeIn key={step.step} delay={i * 0.12}>
-                  <div className="flex flex-col items-center text-center">
-                    {/* Step number */}
-                    <div className="relative mb-6">
-                      <div className="w-11 h-11 rounded-full bg-white border-2 border-choco-300 flex items-center justify-center shadow-warm z-10 relative">
-                        <span className="font-display font-bold text-choco-700 text-sm">
-                          {step.step}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Badge */}
-                    <span className="inline-block px-2.5 py-1 rounded-full bg-choco-50 border border-choco-200 text-choco-600 text-[11px] font-semibold mb-3">
-                      {step.detail}
-                    </span>
-
-                    <h3 className="font-display font-semibold text-stone-900 mb-2 text-lg">
-                      {step.title}
-                    </h3>
-                    <p className="text-stone-500 text-sm leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile: vertical timeline */}
-        <div className="lg:hidden space-y-0">
           {processSteps.map((step, i) => (
-            <FadeIn key={step.step} delay={i * 0.1}>
-              <div className="flex gap-5">
-                {/* Left: line + number */}
-                <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-white border-2 border-choco-300 flex items-center justify-center shadow-warm shrink-0">
+            <FadeIn key={step.step} delay={i * 0.11}>
+              <div className="flex lg:flex-col items-stretch lg:items-center lg:text-center">
+                {/* Círculo + línea vertical mobile */}
+                <div className="flex flex-col items-center mr-5 lg:mr-0 lg:mb-6 shrink-0">
+                  <div className="w-10 h-10 lg:w-11 lg:h-11 rounded-full bg-white border-2 border-choco-300 flex items-center justify-center shadow-warm z-10 relative">
                     <span className="font-display font-bold text-choco-700 text-sm">
                       {step.step}
                     </span>
                   </div>
                   {i < processSteps.length - 1 && (
-                    <div className="w-px flex-1 bg-choco-100 mt-3 mb-3 min-h-[40px]" />
+                    <div className="lg:hidden w-px flex-1 bg-choco-100 mt-3 min-h-[40px]" />
                   )}
                 </div>
 
-                {/* Right: content */}
-                <div className={i < processSteps.length - 1 ? "pb-8" : "pb-0"}>
-                  <span className="inline-block px-2.5 py-1 rounded-full bg-choco-50 border border-choco-200 text-choco-600 text-[11px] font-semibold mb-2">
+                {/* Contenido */}
+                <div
+                  className={`flex-1 lg:flex-none ${
+                    i < processSteps.length - 1 ? "pb-8 lg:pb-0" : ""
+                  }`}
+                >
+                  <span className="inline-block px-2.5 py-1 rounded-full bg-choco-50 border border-choco-200 text-choco-600 text-[11px] font-semibold mb-2 lg:mb-3">
                     {step.detail}
                   </span>
-                  <h3 className="font-display font-semibold text-stone-900 mb-1.5 text-lg">
+                  <h3 className="font-display font-semibold text-stone-900 mb-1.5 lg:mb-2 text-lg">
                     {step.title}
                   </h3>
                   <p className="text-stone-500 text-sm leading-relaxed">
