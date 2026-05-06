@@ -28,7 +28,7 @@ export function MyRole() {
                 <div className="flex items-start gap-3 mb-3">
                   <div className="w-7 h-7 rounded-lg bg-choco-100 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-choco-200 transition-colors">
                     <span className="text-choco-700 text-xs font-bold">
-                      {String.fromCharCode(65 + i)}
+                      {i + 1}
                     </span>
                   </div>
                   <h3 className="font-display font-semibold text-stone-900 leading-tight">
