@@ -40,7 +40,7 @@ export function Closing() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <a
-                    href="https://wa.me/"
+                    href="https://wa.me/5493415847273"
                     className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl bg-choco-500 text-white font-semibold text-sm hover:bg-choco-400 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-choco-900/30"
                     target="_blank"
                     rel="noopener noreferrer"
